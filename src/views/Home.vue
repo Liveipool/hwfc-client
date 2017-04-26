@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>主页</h1>
-    <router-link to="/teamIntroduction">团队介绍</router-link>
   </div>
 </template>
 
