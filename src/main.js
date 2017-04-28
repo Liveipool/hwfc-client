@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './vuex'
 import 'normalize.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 Vue.config.productionTip = true
 

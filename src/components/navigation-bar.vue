@@ -18,7 +18,7 @@ export default {
 #navigationBar {
   width: 100%;
   height: 85px;
-  background-color: #3399ff;
+  background-color: #39f;
 }
 
 #homeLink {

@@ -1,8 +1,7 @@
 <template>
-  <div id='footBar'>
+  <div id='footBar' class="navbar-fixed-bottom visible-lg-block">
     <h1>底栏</h1>
   </div>
-
 </template>
 
 <script>
@@ -21,7 +20,5 @@ export default {
   height: 155px;
   border: 1px solid #39f;
   text-align: center;
-  position: absolute;
-  top: calc(100% - 157px);
 }
 </style>
