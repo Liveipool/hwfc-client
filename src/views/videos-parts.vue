@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>主页</h1>
+    <h1>视频专区-{{$route.params.section}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'videosParts',
   data () {
     return {
     }

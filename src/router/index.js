@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Administrator from '@/views/Administrator'
-import Essays from '@/views/Essays'
-import Home from '@/views/Home'
-import Images from '@/views/Images'
-import Introduction from '@/views/Introduction'
-import Members from '@/views/Members'
-import Records from '@/views/Records'
-import Videos from '@/views/Videos'
-import VideosDetail from '@/views/VideosDetail'
+import home from '@/views/home'
+import introduction from '@/views/introduction'
+import members from '@/views/members'
+import records from '@/views/records'
+import images from '@/views/images'
+import videos from '@/views/videos'
+import videosParts from '@/views/videos-parts'
+import essays from '@/views/essays'
+import administrator from '@/views/administrator'
 
 Vue.use(Router)
 
@@ -21,48 +21,48 @@ export default new Router({
     },
     {
       path: '/administrator',
-      name: 'Administrator',
-      component: Administrator
+      name: 'administrator',
+      component: administrator
     },
     {
       path: '/essays',
-      name: 'Essays',
-      component: Essays
+      name: 'essays',
+      component: essays
     },
     {
       path: '/home',
-      name: 'Home',
-      component: Home
+      name: 'home',
+      component: home
     },
     {
       path: '/images',
-      name: 'Images',
-      component: Images
+      name: 'images',
+      component: images
     },
     {
       path: '/introduction',
-      name: 'Introduction',
-      component: Introduction
+      name: 'introduction',
+      component: introduction
     },
     {
       path: '/members',
-      name: 'Members',
-      component: Members
+      name: 'members',
+      component: members
     },
     {
       path: '/records',
-      name: 'Records',
-      component: Records
+      name: 'records',
+      component: records
     },
     {
       path: '/videos',
-      name: 'Videos',
-      component: Videos
+      name: 'videos',
+      component: videos
     },
     {
       path: '/videos/:section',
-      name: 'VideosDetail',
-      component: VideosDetail
+      name: 'videos-parts',
+      component: videosParts
     }
   ]
 })

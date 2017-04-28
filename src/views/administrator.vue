@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>视频专区</h1>
+    <h1>管理员页面</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Videos',
+  name: 'administrator',
   data () {
     return {
     }

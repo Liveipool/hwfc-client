@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>团队介绍</h1>
+    <h1>战绩记录</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Introduction',
+  name: 'records',
   data () {
     return {
     }

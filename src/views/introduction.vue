@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>视频专区-{{$route.params.section}}</h1>
+    <h1>球队介绍</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'VideosDetail',
+  name: 'introduction',
   data () {
     return {
     }
