@@ -6,10 +6,14 @@ import router from './router'
 import store from './vuex'
 import 'normalize.css'
 import $ from 'jquery'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
 Vue.config.productionTip = true
+
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 new Vue({

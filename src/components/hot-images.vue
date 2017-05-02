@@ -12,16 +12,16 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="/static/home/1.jpg" alt="1.jpg">
+          <a href="/#/images"><img src="/static/home/1.jpg" alt="1.jpg"></a>
         </div>
         <div class="item">
-          <img src="/static/home/2.jpg" alt="2.jpg">
+          <a href="/#/images"><img src="/static/home/2.jpg" alt="2.jpg"></a>
         </div>
         <div class="item">
-          <img src="/static/home/3.jpg" alt="3.jpg">
+          <a href="/#/images"><img src="/static/home/3.jpg" alt="3.jpg"></a>
         </div>
         <div class="item">
-          <img src="/static/home/4.jpg" alt="4.jpg">
+          <a href="/#/images"><img src="/static/home/4.jpg" alt="4.jpg"></a>
         </div>
       </div>
 
