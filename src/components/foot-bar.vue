@@ -1,5 +1,5 @@
 <template>
-  <div id='footBar' class="visible-lg-block">
+  <div id='footBar' class="hidden-xs">
     <div class="foot-bar-name chinese-name">我在中大，混碗饭吃</div>
     <div class="foot-bar-name english-name">Hello World Football Club</div>
     <div class="foot-bar-bottom">

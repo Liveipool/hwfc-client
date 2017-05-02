@@ -113,7 +113,7 @@ export default {
 #hotVideosLarge {
   width: 460px;
   height: 250px;
-  margin: 30px calc(100% - 496px) 0 36px;
+  margin: 30px calc(100% - 496px) 20px 36px;
 }
 
 #hotInformationsSmall {
@@ -125,7 +125,7 @@ export default {
 #hotVideosSmall {
   width: 658px;
   height: 250px;
-  margin: 30px auto 0 auto;
+  margin: 30px auto 20px auto;
 }
 
 </style>
