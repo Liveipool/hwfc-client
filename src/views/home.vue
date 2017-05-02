@@ -95,9 +95,7 @@ export default {
 }
 
 #hotInformationsLarge,
-#hotVideosLarge,
-#hotInformationsSmall,
-#hotVideosSmall {
+#hotInformationsSmall {
   border: 1px solid #39f;
   text-align: center;
 }
