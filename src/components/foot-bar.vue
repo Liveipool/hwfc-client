@@ -32,11 +32,11 @@ export default {
 
 .chinese-name {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 75px;
 }
 
 .english-name {
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 12px;
 }
 

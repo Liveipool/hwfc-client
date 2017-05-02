@@ -71,7 +71,6 @@ export default {
 #hotImagesSmall {
   width: 658px;
   height: 460px;
-  border: 1px solid #39f;
   text-align: center;
 }
 
