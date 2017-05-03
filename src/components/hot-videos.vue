@@ -1,12 +1,12 @@
 <template>
-  <div class="hot-videos">
-    <div class="hot-videos__title">视频专区</div>
-    <div class="hot-videos__video-covers">
-        <img class="hot-videos__video-cover" src="/static/home/video1-cover.png" @click="showVideoDialog(1)">
-        <img class="hot-videos__video-cover" src="/static/home/video2-cover.png" @click="showVideoDialog(2)">
+  <div>
+    <div class="hot-videos-title" @click="goToVideos">视频专区</div>
+    <div class="hot-videos-video-covers">
+      <img class="hot-videos-video-cover" src="/static/home/video1-cover.png" @click="showVideoDialog(1)">
+      <img class="hot-videos-video-cover" src="/static/home/video2-cover.png" @click="showVideoDialog(2)">
     </div>
-    <el-dialog v-model="showVideo" custom-class="hot-videos__dialog" @close="stopPlaying">
-      <d-player ref="player" :video="videos[0]" class="hot-videos__video" :hotkey="false" :loop="false"></d-player>
+    <el-dialog v-model="showVideo" custom-class="hot-videos-dialog" @close="stopPlaying">
+      <d-player ref="player" :video="videos[0]" class="hot-videos-video" :hotkey="false" :loop="false"></d-player>
     </el-dialog>
   </div>
 </template>
@@ -39,13 +39,16 @@ export default {
     },
     stopPlaying () {
       this.$refs.player.dp.pause()
+    },
+    goToVideos () {
+      window.location = '/#/videos'
     }
   }
 }
 </script>
 
 <style scoped>
-.hot-videos__title {
+.hot-videos-title {
   font-family: ArialMT;
   font-size: 22px;
   width: 110px;
@@ -53,20 +56,22 @@ export default {
   padding: 8px 11px;
   border-bottom: 3px solid #2a96ff;
   margin-bottom: 17px;
+  cursor: pointer;
 }
 
-.hot-videos__video-covers {
+.hot-videos-video-covers {
   height: calc(100% - 67px);
   display: flex;
   justify-content: space-between;
 }
 
-.hot-videos__video-cover {
+.hot-videos-video-cover {
   height: 100%;
   width: 45%;
+  cursor: pointer;
 }
 
-.hot-videos__video {
+.hot-videos-video {
   height: 360px;
   width: 480px;
 }
@@ -74,7 +79,7 @@ export default {
 </style>
 
 <style>
-.hot-videos__dialog {
+.hot-videos-dialog {
   width: 520px !important;
 }
 </style>

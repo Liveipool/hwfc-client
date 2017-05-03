@@ -55,7 +55,7 @@ span {
 }
 
 /*router-link本身就是一个a标签*/
-a {
+.foot-bar-bottom a {
   margin-right: 33px;
   color: #313231;
   text-decoration: underline;
