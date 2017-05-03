@@ -29,6 +29,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        include: [resolve('src'), resolve('test')],
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
@@ -59,8 +68,8 @@ module.exports = {
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('common.js'),
     new webpack.ProvidePlugin({
-      jQuery: "jquery",
-      $: "jquery"
+      jQuery: 'jquery',
+      $: 'jquery'
     })
-  ]  
+  ]
 }
