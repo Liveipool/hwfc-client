@@ -1,5 +1,5 @@
 <template>
-  <div id="hotImages">
+  <div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
       <!-- Indicators -->
       <ol class="carousel-indicators">

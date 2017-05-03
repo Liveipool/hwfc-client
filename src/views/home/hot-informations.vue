@@ -1,5 +1,5 @@
 <template>
-  <div id="hotInformations">
+  <div>
     <h1>预告、文章</h1>
   </div>
 </template>

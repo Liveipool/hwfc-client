@@ -23,9 +23,9 @@
 </template>
 
 <script>
-import hotImages from '@/components/hot-images'
-import hotInformations from '@/components/hot-informations'
-import hotVideos from '@/components/hot-videos'
+import hotImages from '@/views/home/hot-images'
+import hotInformations from '@/views/home/hot-informations'
+import hotVideos from '@/views/home/hot-videos'
 
 export default {
   name: 'home',

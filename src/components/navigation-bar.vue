@@ -1,10 +1,10 @@
 <template>
   <div class="navigation-bar">
-    <img src="../../static/home/logo.png" alt="logo" class="navigation-bar__logo" height="85px">
-    <router-link to="/home" class="navigation-bar__brand">HWFC</router-link>
-    <div class="navigation-bar__navs">
-      <router-link class="navigation-bar__nav" v-for="nav in navs" :to="nav.url" key="nav.url">{{nav.description}}</router-link><router-link v-if="logged" to="/administrator" class="navigation-bar__nav">管理员页面</router-link>
-      <router-link v-if="logged" to="/home" class="navigation-bar__log" @click.native="logOut">登出</router-link><router-link v-if="!logged" to="/home" class="navigation-bar__log" @click.native="logIn">管理员登录</router-link>
+    <img src="../../static/home/logo.png" alt="logo" class="navigation-bar-logo" height="85px">
+    <router-link to="/home" class="navigation-bar-brand">HWFC</router-link>
+    <div class="navigation-bar-navs">
+      <router-link class="navigation-bar-nav" v-for="nav in navs" :to="nav.url" key="nav.url">{{nav.description}}</router-link><router-link v-if="logged" to="/administrator" class="navigation-bar-nav">管理员页面</router-link>
+      <router-link v-if="logged" to="/home" class="navigation-bar-log" @click.native="logOut">登出</router-link><router-link v-if="!logged" to="/home" class="navigation-bar-log" @click.native="logIn">管理员登录</router-link>
     </div>
   </div>
 </template>
@@ -64,36 +64,36 @@ export default {
   text-decoration: none;
 }
 
-.navigation-bar__logo {
+.navigation-bar-logo {
   float: left;
   margin-left: 32px;
 }
 
-.navigation-bar__brand {
+.navigation-bar-brand {
   float: left;
   margin-left: 12px;
   font-size: 32px;
 }
 
-.navigation-bar__navs {
+.navigation-bar-navs {
   float: right;
   margin-right: 32px;
   font-size: 28px;
 }
 
-.navigation-bar__nav {
+.navigation-bar-nav {
   padding: 0 8px 5px;
 }
 
-.navigation-bar__nav:hover, .navigation-bar__log:hover, .navigation-bar__nav.router-link-active {
+.navigation-bar-nav:hover, .navigation-bar-log:hover, .navigation-bar-nav.router-link-active {
   border-bottom: 2px solid white;
 }
 
-.navigation-bar__nav + .navigation-bar__nav {
+.navigation-bar-nav + .navigation-bar-nav {
   margin-left: 10px;
 }
 
-.navigation-bar__log {
+.navigation-bar-log {
   margin-left: 32px;
   padding: 0 8px 5px;
 }
