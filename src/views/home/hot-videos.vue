@@ -50,13 +50,18 @@ export default {
 <style scoped>
 .hot-videos-title {
   font-family: ArialMT;
-  font-size: 22px;
+  font-size: 20px;
   width: 110px;
   margin: 0 auto;
   padding: 8px 11px;
-  border-bottom: 3px solid #2a96ff;
+  border-bottom: 2px solid #39f;
   margin-bottom: 17px;
+  color: #475669;
   cursor: pointer;
+}
+
+.hot-videos-title:hover {
+  color: #1F2D3D;
 }
 
 .hot-videos-video-covers {

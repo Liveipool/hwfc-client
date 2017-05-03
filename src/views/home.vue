@@ -87,7 +87,7 @@ export default {
 }
 
 #divisionLine {
-  width: 2px;
+  width: 1px;
   height: 100%;
   background-color: #39f;
   display: inline-block;
@@ -96,13 +96,12 @@ export default {
 
 #hotInformationsLarge,
 #hotInformationsSmall {
-  border: 1px solid #39f;
   text-align: center;
 }
 
 #hotInformationsLarge {
   width: 460px;
-  height: 180px;
+  height: 200px;
   margin: 0 calc(100% - 496px) 0 36px;
 }
 
@@ -110,19 +109,19 @@ export default {
 #hotVideosLarge {
   width: 460px;
   height: 250px;
-  margin: 30px calc(100% - 496px) 20px 36px;
+  margin: 10px calc(100% - 496px) 20px 36px;
 }
 
 #hotInformationsSmall {
   width: 658px;
-  height: 180px;
+  height: 200px;
   margin: 0 auto;
 }
 
 #hotVideosSmall {
   width: 658px;
   height: 250px;
-  margin: 30px auto 20px auto;
+  margin: 10px auto 20px auto;
 }
 
 </style>
