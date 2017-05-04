@@ -24,7 +24,7 @@ export default {
       noticesTime: '5月23日晚19：00整',
       noticesContent: '在工学院小广场庆祝欧光文获得2017年诺贝尔眼睛最小奖。',
       essaysTitle: '如何评价中山大学HWFC？',
-      essaysBrief: '混碗饭吃（HWFC）是Hello World Football Club的爱称，俱乐部成立于2010年9月30日，在此后的七年里，混碗饭吃拿下了校内所有比赛的冠军。然而，拿过冠军的队伍很多，但像混碗饭吃这样生生不息的球队只有一支，究竟是什么原因。。。',
+      essaysBrief: '混碗饭吃是Hello World Football Club的爱称，俱乐部成立于10年9月30日，在此后的七年里拿下了校内所有比赛的冠军。然而，拿过冠军的队伍很多，但像混碗饭吃这样的球队只有一支，是什么原因...',
       essaysUploadTime: '2017年5月4日发布',
       essaysAuthor: '李为'
     }

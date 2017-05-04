@@ -44,7 +44,7 @@ export default {
 .carousel-inner,
 .item,
 .item img {
-  width: 658px !important;
+  width: 100% !important;
   height: 460px !important;
 }
 

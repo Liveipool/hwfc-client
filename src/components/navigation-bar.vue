@@ -78,7 +78,7 @@ export default {
 .navigation-bar-navs {
   float: right;
   margin-right: 32px;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .navigation-bar-nav {
