@@ -2,8 +2,7 @@
   <div>
     <div class="hot-videos-title" @click="goToVideos">视频专区</div>
     <div class="hot-videos-video-covers">
-      <img class="hot-videos-video-cover" src="/static/home/video1-cover.png" @click="showVideoDialog(1)">
-      <img class="hot-videos-video-cover" src="/static/home/video2-cover.png" @click="showVideoDialog(2)">
+      <img v-for="(video, index) in videos" class="hot-videos-video-cover" :src="video.cover" @click="showVideoDialog(index)">
     </div>
     <el-dialog v-model="showVideo" custom-class="hot-videos-dialog" @close="stopPlaying">
       <d-player ref="player" :video="videos[0]" class="hot-videos-video" :hotkey="false" :loop="false"></d-player>
@@ -16,14 +15,10 @@ import VueDPlayer from 'vue-dplayer'
 
 export default {
   name: 'hotVideos',
+  props: ['videos'],
   data () {
     return {
-      showVideo: false,
-      videos: [{
-        url: '/static/home/video1.mp4'
-      }, {
-        url: '/static/home/video2.mp4'
-      }]
+      showVideo: false
     }
   },
   components: {
@@ -33,7 +28,7 @@ export default {
     showVideoDialog (index) {
       this.showVideo = true
       this.$nextTick(() => {  // dom更新以后，才能从$refs里找到播放器
-        this.$refs.player.dp.switchVideo(this.videos[index - 1])
+        this.$refs.player.dp.switchVideo(this.videos[index])
         this.$refs.player.dp.play(0)
       })
     },

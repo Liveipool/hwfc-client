@@ -11,17 +11,8 @@
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <a href="/#/images"><img src="/static/home/1.jpg" alt="1.jpg"></a>
-        </div>
-        <div class="item">
-          <a href="/#/images"><img src="/static/home/2.jpg" alt="2.jpg"></a>
-        </div>
-        <div class="item">
-          <a href="/#/images"><img src="/static/home/3.jpg" alt="3.jpg"></a>
-        </div>
-        <div class="item">
-          <a href="/#/images"><img src="/static/home/4.jpg" alt="4.jpg"></a>
+        <div v-for="(url, index) in urls" class="item" :class="{active: index === 0}">
+          <a href="/#/images"><img :src="url" :alt="`热点图片${index + 1}`"></a>
         </div>
       </div>
 
@@ -32,6 +23,7 @@
 <script>
 export default {
   name: 'hotImages',
+  props: ['urls'],
   data () {
     return {
     }
