@@ -2,21 +2,21 @@
   <div id="home" class="container-fluid">
     <div class="row">
       <div id="hotImagesLayoutLarge" class="col-lg-7 visible-lg-inline-block">
-        <hot-images id="hotImagesLarge"></hot-images>
+        <hot-images id="hotImagesLarge" :urls="imageUrls"></hot-images>
       </div>
       <div id="hotImagesLayoutSmall" class="col-md-12 col-sm-12 col-xs-12 hidden-lg">
-        <hot-images id="hotImagesSmall"></hot-images>
+        <hot-images id="hotImagesSmall" :urls="imageUrls"></hot-images>
       </div>
       <div id="division" class="col-lg-1 visible-lg-inline-block">
         <div id="divisionLine"></div>
       </div>
       <div id="hotInformationsAndVideosLarge" class="col-lg-4 visible-lg-inline-block">
-        <hot-informations id="hotInformationsLarge"></hot-informations>
-        <hot-videos id="hotVideosLarge"></hot-videos>
+        <hot-informations id="hotInformationsLarge" :notice="notice" :essay="essay"></hot-informations>
+        <hot-videos id="hotVideosLarge" :videos="videos"></hot-videos>
       </div>
       <div id="hotInformationsAndVideosSmall" class="col-md-12 col-sm-12 col-xs-12 hidden-lg">
-        <hot-informations id="hotInformationsSmall"></hot-informations>
-        <hot-videos id="hotVideosSmall"></hot-videos>
+        <hot-informations id="hotInformationsSmall" :notice="notice" :essay="essay"></hot-informations>
+        <hot-videos id="hotVideosSmall" :videos="videos"></hot-videos>
       </div>
     </div>
   </div>
@@ -36,7 +36,30 @@ export default {
   },
   data () {
     return {
+      imageUrls: [],
+      videos: [],
+      notice: {
+        time: '',
+        content: ''
+      },
+      essay: {
+        title: '',
+        brief: '',
+        uploadTime: '',
+        author: ''
+      }
     }
+  },
+  mounted: async function () {
+    let {data: {url}} = await this.$http.get('/hotImages')
+    let {data: {videos}} = await this.$http.get('/hotVideos')
+    let {data: notice} = await this.$http.get('/notices/new')
+    let {data: essay} = await this.$http.get('/essays/new')
+    this.imageUrls = url
+    this.videos = videos
+    this.notice = notice
+    this.essay = essay
+    // console.log('done')
   }
 }
 </script>

@@ -2,14 +2,14 @@
   <div>
     <el-tabs id="hotInformationsTabs" v-model="activeName" @tab-click="handleClick">
       <el-tab-pane id="notices" label="预告" name="notices">
-        <div id="noticesTime">{{noticesTime}}</div>
-        <div id="noticesContent">{{noticesContent}}</div>
+        <div id="noticesTime">{{notice.time}}</div>
+        <div id="noticesContent">{{notice.content}}</div>
       </el-tab-pane>
       <el-tab-pane id="essays" label="文章" name="essays">
-        <div id="essaysTitle">{{essaysTitle}}</div>
-        <div id="essaysBrief">{{essaysBrief}}</div>
-        <div id="essaysUploadTime">{{essaysUploadTime}}</div>
-        <div id="essaysAuthor">{{essaysAuthor}}</div>
+        <div id="essaysTitle">{{essay.title}}</div>
+        <div id="essaysBrief">{{essay.brief}}</div>
+        <div id="essaysUploadTime">{{essay.uploadTime}}</div>
+        <div id="essaysAuthor">{{essay.author}}</div>
       </el-tab-pane>
     </el-tabs>
   </div>
@@ -18,20 +18,15 @@
 <script>
 export default {
   name: 'hotInformations',
+  props: ['notice', 'essay'],
   data () {
     return {
-      activeName: 'notices',
-      noticesTime: '5月23日晚19：00整',
-      noticesContent: '在工学院小广场庆祝欧光文获得2017年诺贝尔眼睛最小奖。',
-      essaysTitle: '如何评价中山大学HWFC？',
-      essaysBrief: '混碗饭吃是Hello World Football Club的爱称，俱乐部成立于10年9月30日，在此后的七年里拿下了校内所有比赛的冠军。然而，拿过冠军的队伍很多，但像混碗饭吃这样的球队只有一支，是什么原因...',
-      essaysUploadTime: '2017年5月4日发布',
-      essaysAuthor: '李为'
+      activeName: 'notices'
     }
   },
   methods: {
     handleClick (tab, event) {
-      console.log(tab, event)
+      // console.log(tab, event)
     }
   }
 }
